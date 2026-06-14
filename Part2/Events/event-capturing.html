@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+    <style>
+        .a{
+            height: 600px;
+            width: 600px;
+            background-color: aqua;
+            border-radius: 20px;
+        }
+        .b{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(0, 81, 255);
+            border-radius: 20px;
+        }
+        .c{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(162, 0, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border-radius: 20px;
+        }
+        button{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(255, 0, 43);
+            border: none;
+            border-radius: 20px;
+            font-size: 25px;
+            color: aliceblue;
+        }
+        button:active{
+        scale: calc(0.95);
+    }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>Click Me..</button>
+            </div>
+        </div>
+    </div>
+    <script src="event-capturing.js"></script>
+</body>
+</html>

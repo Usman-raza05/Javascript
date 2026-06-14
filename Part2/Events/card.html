@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Project</title>
+    <style>
+         * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: system-ui;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            padding: 50px;
+            color: #555;
+            height: 100%;
+            width: 100%;
+            background-color: #222;
+            gap: 5px;
+        }
+         input {
+            display: block;
+        }
+         .card {
+            width: 300px;
+            height: 200px;
+            overflow: auto;
+            color: #fff;
+            display: inline-block;
+            margin-top: 40px;
+            margin: 5px;
+            padding: 23px;
+            border: 1px solid #555;
+            border-radius: 10px;
+        }
+        .card::-webkit-scrollbar{
+            display: none;
+        }
+
+        .profile {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            overflow: hidden;
+        }
+
+        .profile img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card h5 {
+            margin-top: 3px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+     <div id="main">
+        <form action="">
+            <input type="text" placeholder="Profile pic">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Occupation">
+            <input type="text" placeholder="Info">
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- <div class="card">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="">
+            </div>
+            <h3>Harsh Sharma</h3>
+            <h5>Creative Coder</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi aliquid dolores ullam nihil
+                similique iusto esse quia perferendis omnis, hic sint sapiente.</p>
+        </div> -->
+
+    </div>
+
+
+    <script src="card.js"></script>
+</body>
+
+</html>
