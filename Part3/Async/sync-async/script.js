@@ -10,9 +10,30 @@
 // aisa code jo line by line chale woh sync code hai
 // aisa code jo tab chale jab chalne ke liye ready ho jaye woh async hai
 
-function kuchDerBaadChalunga(fnc) {
-  setTimeout(fnc, Math.floor(Math.random() * 10) * 1000);
-}
-kuchDerBaadChalunga(function () {
-  console.log("Hey");
+// function kuchDerBaadChalunga(fnc) {
+//   setTimeout(fnc, Math.floor(Math.random() * 10) * 1000);
+// }
+// kuchDerBaadChalunga(function () {
+//   console.log("Hey");
+// });
+
+let pr = new Promise(function (res, rej) {
+  setTimeout(() => {
+    let rn = Math.floor(Math.random() * 10);
+    if (rn > 5) res("Resolved "+rn);
+    else rej("Rejected "+rn);
+  }, 200);
 });
+
+async function abcd(){
+  try {
+    let val = await pr;
+    console.log(val);
+    
+  }
+  catch(err){
+    console.log(err);
+    
+  }
+}
+abcd();

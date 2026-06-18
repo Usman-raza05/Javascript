@@ -1,3 +1,5 @@
+// ek function ke parameter mein agar aap ek aur function pass kar rahe ho to woh parameter wale function ko callback kehte hein
+
 function profileLekarAao(username, cb) {
   console.log("Fetching profile...");
   setTimeout(() => {
