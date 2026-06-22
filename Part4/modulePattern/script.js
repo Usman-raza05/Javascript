@@ -30,4 +30,4 @@ let Bank = (function () {
 };
 })();
 
-Bank.withdraw(11000)
+Bank.draw(11000)
